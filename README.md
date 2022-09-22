@@ -1,6 +1,5 @@
 # ComSciense-Labs
-<br />
-<br />
+
 lab3 "Smiles"
 
 Основное задание
