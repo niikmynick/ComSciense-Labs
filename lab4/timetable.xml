@@ -1,0 +1,28 @@
+<timetable> 
+     <lang> ru</lang>
+     <group> P3124</group>
+     <day> thursday</day>
+     <lessons> 
+          <lesson1> 
+               <time> 10:00-11:30</time>
+               <room> 1338 (Бывш. 381) Ауд.</room>
+               <place> Кронверкский пр., д.49, лит.А</place>
+               <subject> Основы Профессиональной Деятельности (Лабораторная)</subject>
+               <teacher> Белозубов Александр Владимирович</teacher>
+          </lesson1> 
+          <lesson2> 
+               <time> 11:40-13:10</time>
+               <room> 1338 (Бывш. 381) Ауд.</room>
+               <place> Кронверкский пр., д.49, лит.А</place>
+               <subject> Основы Профессиональной Деятельности (Лабораторная)</subject>
+               <teacher> Белозубов Александр Владимирович</teacher>
+          </lesson2> 
+          <lesson3> 
+               <time> 13:30-15:00</time>
+               <room> 2426 (Бывш. 422) Ауд.</room>
+               <place> Кронверкский пр., д.49, лит.А</place>
+               <subject> Информатика (Лекция)</subject>
+               <teacher> Болдырева Елена Александровна</teacher>
+          </lesson3> 
+     </lessons> 
+</timetable> 
