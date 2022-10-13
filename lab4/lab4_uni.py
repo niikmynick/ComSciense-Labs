@@ -84,6 +84,24 @@ def to_csv():
                 file.write('\n')
 
 
+def to_yml():
+    with open("timetable.json", 'r', encoding="utf8") as file:
+        text = [i.strip() for i in file.read().split('\n')]
+    count = 0
+
+    with open('timetable.yml', 'w', encoding='utf8') as file:
+        for i in range(1, len(text) - 1):
+            if ': {' in text[i]:
+                tag = re.search(r'"(\w*)":', text[i])[0][1:-2]
+                file.write('     ' * count + f'{tag}: \n')
+                count += 1
+            elif ':' in text[i]:
+                tag = re.search(r'"(-\w*)":', text[i])[0][2:-2]
+                info = re.search(r'": "([\S\s]*)"', text[i])[0][4:-1]
+
+                file.write('     ' * count + f'{tag}: {info} \n')
+
+
 if convert_format == 'proto':
     to_proto()
 elif convert_format == 'wml':
@@ -92,3 +110,5 @@ elif convert_format == 'tsv':
     to_tsv()
 elif convert_format == 'csv':
     to_csv()
+elif convert_format == 'yml':
+    to_yml()
